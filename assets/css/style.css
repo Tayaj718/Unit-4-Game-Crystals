@@ -5,3 +5,8 @@
     text-align: center;
     
 }
+
+body {
+    background: linear-gradient(#ffff99, #ff99cc);
+}
+
