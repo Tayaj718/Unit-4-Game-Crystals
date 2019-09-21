@@ -2,24 +2,24 @@ $(document).ready(function() {
     //INSERT NUMBER ARRAYS
     //MAKE IT RANDOM
 
-    let randNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+    var randNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
 
     $('#randNum').html(randNumber);
 
 
     //each gemstone has a hidden value
 
-    let amethyst = Math.floor(Math.random() * 12) + 1;
-    let emerald = Math.floor(Math.random() * 12) + 1;
-    let ruby = Math.floor(Math.random() * 12) + 1;
-    let diamond = Math.floor(Math.random() * 12) + 1;
+    var amethyst = Math.floor(Math.random() * 12) + 1;
+    var emerald = Math.floor(Math.random() * 12) + 1;
+    var ruby = Math.floor(Math.random() * 12) + 1;
+    var diamond = Math.floor(Math.random() * 12) + 1;
 
     //player clicks the jewel to display value's total score
 
-    let wins = 0;
-    let losses = 0;
+    var wins = 0;
+    var losses = 0;
 
-    let totalScore = 0;
+    var totalScore = 0;
     $('#totalScore').text(totalScore);
 
     //IDK HOW TO CONSOLE LOG
@@ -84,7 +84,7 @@ $(document).ready(function() {
     $('#diamond').click(() => {
         totalScore = totalScore + diamond;
         $('#totalScore').text(totalScore);
-        if (totScore === randNumber) {
+        if (totalScore === randNumber) {
             win();
             reset();
             resetTwo();
